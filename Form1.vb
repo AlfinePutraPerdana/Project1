@@ -2,30 +2,26 @@
 
     
     
-    Private Sub ButtonHitung_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonHitung.Click
-        Dim a, b, c, rataan As Decimal
+    
 
-        a = TextBoxNilai1.Text
-        b = TextBoxNilai2.Text
-        c = TextBoxNilai3.Text
-        rataan = (a + b + c) / 3
-        LabelRataan.Text = FormatNumber(rataan, 2)
-        If rataan > 80 Then
-            LabelHadiah.Text = "Rp.10.000.000 + Sertifikat"
-        ElseIf rataan > 70 Then
-            LabelHadiah.Text = "Rp.7.500.000 + Sertifikat"
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonDaftar.Click
+        If CBTurnamen.Text = "Dota 2" Then
+            TBBiaya.Text = "Rp.200.000"
+            BoxTotalHadiah.Text = "Rp.14.000.000"
+        ElseIf CBTurnamen.Text = "CounterStrike : Global Offensive" Then
+            TBBiaya.Text = "Rp.225.000"
+            BoxTotalHadiah.Text = "Rp.14.500.000"
+        ElseIf CBTurnamen.Text = "Player Unknown's Battleground" Then
+            TBBiaya.Text = "Rp.275.000"
+            BoxTotalHadiah.Text = "Rp.15.000.000"
         Else
-            LabelHadiah.Text = "Sertifikat"
-        End If
+            MsgBox("Data Yang Dimasukan Tidak Lengkap! ", MsgBoxStyle.Exclamation, "Data Tidak Lengkap!")
 
+        End If
+        MsgBox("Selamat! " & TextBoxTeam.Text & " Telah Terdaftar" & vbNewLine & "Informasi akan dikirimkan melalui E-mail anda", MsgBoxStyle.Information, "Terdaftar")
     End Sub
 
-    Private Sub ButtonUlang_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonUlang.Click
-        TextBoxNama.Clear()
-        TextBoxNilai1.Clear()
-        TextBoxNilai2.Clear()
-        TextBoxNilai3.Clear()
-        LabelHadiah.Text = ".............................."
-        LabelRataan.Text = ".............................."
+    Private Sub ButtonKeluar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonKeluar.Click
+        Close()
     End Sub
 End Class
