@@ -22,178 +22,189 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lbNama = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBoxTeam = New System.Windows.Forms.TextBox()
+        Me.ButtonDaftar = New System.Windows.Forms.Button()
+        Me.ButtonKeluar = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.LabelRataan = New System.Windows.Forms.Label()
-        Me.LabelHadiah = New System.Windows.Forms.Label()
-        Me.TextBoxNama = New System.Windows.Forms.TextBox()
-        Me.TextBoxNilai1 = New System.Windows.Forms.TextBox()
-        Me.TextBoxNilai2 = New System.Windows.Forms.TextBox()
-        Me.TextBoxNilai3 = New System.Windows.Forms.TextBox()
-        Me.ButtonHitung = New System.Windows.Forms.Button()
-        Me.ButtonUlang = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.CBTurnamen = New System.Windows.Forms.ComboBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TBBiaya = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.BoxTotalHadiah = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'lbNama
+        'Label1
         '
-        Me.lbNama.AutoSize = True
-        Me.lbNama.Location = New System.Drawing.Point(11, 16)
-        Me.lbNama.Name = "lbNama"
-        Me.lbNama.Size = New System.Drawing.Size(41, 13)
-        Me.lbNama.TabIndex = 0
-        Me.lbNama.Text = "Nama :"
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(10, 17)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(296, 33)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "E-Sport Competition"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(11, 46)
+        Me.Label2.Location = New System.Drawing.Point(16, 75)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(42, 13)
+        Me.Label2.Size = New System.Drawing.Size(77, 13)
         Me.Label2.TabIndex = 1
-        Me.Label2.Text = "Nilai 1 :"
+        Me.Label2.Text = "Nama Team :  "
         '
-        'Label3
+        'TextBoxTeam
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(11, 72)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(42, 13)
-        Me.Label3.TabIndex = 2
-        Me.Label3.Text = "Nilai 2 :"
+        Me.TextBoxTeam.Location = New System.Drawing.Point(122, 75)
+        Me.TextBoxTeam.Name = "TextBoxTeam"
+        Me.TextBoxTeam.Size = New System.Drawing.Size(146, 20)
+        Me.TextBoxTeam.TabIndex = 2
         '
-        'Label4
+        'ButtonDaftar
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(11, 98)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(42, 13)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Nilai 3 :"
+        Me.ButtonDaftar.Location = New System.Drawing.Point(333, 361)
+        Me.ButtonDaftar.Name = "ButtonDaftar"
+        Me.ButtonDaftar.Size = New System.Drawing.Size(94, 23)
+        Me.ButtonDaftar.TabIndex = 6
+        Me.ButtonDaftar.Text = "Daftar"
+        Me.ButtonDaftar.UseVisualStyleBackColor = True
+        '
+        'ButtonKeluar
+        '
+        Me.ButtonKeluar.Location = New System.Drawing.Point(433, 361)
+        Me.ButtonKeluar.Name = "ButtonKeluar"
+        Me.ButtonKeluar.Size = New System.Drawing.Size(94, 23)
+        Me.ButtonKeluar.TabIndex = 7
+        Me.ButtonKeluar.Text = "Close"
+        Me.ButtonKeluar.UseVisualStyleBackColor = True
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(11, 144)
+        Me.Label5.Location = New System.Drawing.Point(16, 112)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 13)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Rataan :"
+        Me.Label5.Size = New System.Drawing.Size(41, 13)
+        Me.Label5.TabIndex = 8
+        Me.Label5.Text = "E-mail :"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(11, 192)
+        Me.Label6.Location = New System.Drawing.Point(16, 143)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(47, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Hadiah :"
+        Me.Label6.Size = New System.Drawing.Size(62, 13)
+        Me.Label6.TabIndex = 9
+        Me.Label6.Text = "Nomor HP :"
         '
-        'LabelRataan
+        'TextBox2
         '
-        Me.LabelRataan.AutoSize = True
-        Me.LabelRataan.Location = New System.Drawing.Point(64, 144)
-        Me.LabelRataan.Name = "LabelRataan"
-        Me.LabelRataan.Size = New System.Drawing.Size(97, 13)
-        Me.LabelRataan.TabIndex = 6
-        Me.LabelRataan.Text = ".............................."
+        Me.TextBox2.Location = New System.Drawing.Point(122, 140)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox2.TabIndex = 10
         '
-        'LabelHadiah
+        'TextBox3
         '
-        Me.LabelHadiah.AutoSize = True
-        Me.LabelHadiah.Location = New System.Drawing.Point(64, 192)
-        Me.LabelHadiah.Name = "LabelHadiah"
-        Me.LabelHadiah.Size = New System.Drawing.Size(97, 13)
-        Me.LabelHadiah.TabIndex = 7
-        Me.LabelHadiah.Text = ".............................."
+        Me.TextBox3.Location = New System.Drawing.Point(122, 109)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(146, 20)
+        Me.TextBox3.TabIndex = 11
         '
-        'TextBoxNama
+        'Label3
         '
-        Me.TextBoxNama.Location = New System.Drawing.Point(76, 13)
-        Me.TextBoxNama.Name = "TextBoxNama"
-        Me.TextBoxNama.Size = New System.Drawing.Size(190, 20)
-        Me.TextBoxNama.TabIndex = 8
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(16, 175)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(83, 13)
+        Me.Label3.TabIndex = 12
+        Me.Label3.Text = "Pilih Turnamen :"
         '
-        'TextBoxNilai1
+        'CBTurnamen
         '
-        Me.TextBoxNilai1.Location = New System.Drawing.Point(76, 39)
-        Me.TextBoxNilai1.Name = "TextBoxNilai1"
-        Me.TextBoxNilai1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxNilai1.TabIndex = 9
+        Me.CBTurnamen.FormattingEnabled = True
+        Me.CBTurnamen.Items.AddRange(New Object() {"Dota 2", "CounterStrike : Global Offensive", "Player Unknown's Battleground"})
+        Me.CBTurnamen.Location = New System.Drawing.Point(122, 175)
+        Me.CBTurnamen.Name = "CBTurnamen"
+        Me.CBTurnamen.Size = New System.Drawing.Size(184, 21)
+        Me.CBTurnamen.TabIndex = 13
         '
-        'TextBoxNilai2
+        'Label4
         '
-        Me.TextBoxNilai2.Location = New System.Drawing.Point(76, 65)
-        Me.TextBoxNilai2.Name = "TextBoxNilai2"
-        Me.TextBoxNilai2.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxNilai2.TabIndex = 10
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(16, 218)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(100, 13)
+        Me.Label4.TabIndex = 14
+        Me.Label4.Text = "Biaya Pendaftaran :"
         '
-        'TextBoxNilai3
+        'TBBiaya
         '
-        Me.TextBoxNilai3.Location = New System.Drawing.Point(76, 91)
-        Me.TextBoxNilai3.Name = "TextBoxNilai3"
-        Me.TextBoxNilai3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBoxNilai3.TabIndex = 11
+        Me.TBBiaya.Location = New System.Drawing.Point(122, 215)
+        Me.TBBiaya.Name = "TBBiaya"
+        Me.TBBiaya.Size = New System.Drawing.Size(119, 20)
+        Me.TBBiaya.TabIndex = 15
         '
-        'ButtonHitung
+        'Label7
         '
-        Me.ButtonHitung.Location = New System.Drawing.Point(272, 144)
-        Me.ButtonHitung.Name = "ButtonHitung"
-        Me.ButtonHitung.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonHitung.TabIndex = 12
-        Me.ButtonHitung.Text = "Hitung"
-        Me.ButtonHitung.UseVisualStyleBackColor = True
+        Me.Label7.AutoSize = True
+        Me.Label7.Location = New System.Drawing.Point(16, 274)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(74, 13)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Total Hadiah :"
         '
-        'ButtonUlang
+        'BoxTotalHadiah
         '
-        Me.ButtonUlang.Location = New System.Drawing.Point(272, 182)
-        Me.ButtonUlang.Name = "ButtonUlang"
-        Me.ButtonUlang.Size = New System.Drawing.Size(75, 23)
-        Me.ButtonUlang.TabIndex = 13
-        Me.ButtonUlang.Text = "Ulang"
-        Me.ButtonUlang.UseVisualStyleBackColor = True
+        Me.BoxTotalHadiah.Location = New System.Drawing.Point(122, 271)
+        Me.BoxTotalHadiah.Name = "BoxTotalHadiah"
+        Me.BoxTotalHadiah.Size = New System.Drawing.Size(119, 20)
+        Me.BoxTotalHadiah.TabIndex = 17
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(358, 341)
-        Me.Controls.Add(Me.ButtonUlang)
-        Me.Controls.Add(Me.ButtonHitung)
-        Me.Controls.Add(Me.TextBoxNilai3)
-        Me.Controls.Add(Me.TextBoxNilai2)
-        Me.Controls.Add(Me.TextBoxNilai1)
-        Me.Controls.Add(Me.TextBoxNama)
-        Me.Controls.Add(Me.LabelHadiah)
-        Me.Controls.Add(Me.LabelRataan)
+        Me.ClientSize = New System.Drawing.Size(554, 404)
+        Me.Controls.Add(Me.BoxTotalHadiah)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.TBBiaya)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.CBTurnamen)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.ButtonKeluar)
+        Me.Controls.Add(Me.ButtonDaftar)
+        Me.Controls.Add(Me.TextBoxTeam)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.lbNama)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Form Pendaftaran"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents lbNama As System.Windows.Forms.Label
+    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TextBoxTeam As System.Windows.Forms.TextBox
+    Friend WithEvents ButtonDaftar As System.Windows.Forms.Button
+    Friend WithEvents ButtonKeluar As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents LabelRataan As System.Windows.Forms.Label
-    Friend WithEvents LabelHadiah As System.Windows.Forms.Label
-    Friend WithEvents TextBoxNama As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxNilai1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxNilai2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBoxNilai3 As System.Windows.Forms.TextBox
-    Friend WithEvents ButtonHitung As System.Windows.Forms.Button
-    Friend WithEvents ButtonUlang As System.Windows.Forms.Button
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents CBTurnamen As System.Windows.Forms.ComboBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents TBBiaya As System.Windows.Forms.TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents BoxTotalHadiah As System.Windows.Forms.TextBox
 
 End Class
